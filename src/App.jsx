@@ -5,7 +5,7 @@ function App() {
 	const [weather, setWeather] = useState('null');
 
 	function handleClick() {
-		fetch(`http://api.weatherapi.com/v1/current.json?key=39b4ca0a7ef0490296435419230702&q=${location}&aqi=no`)
+		fetch(`https://api.weatherapi.com/v1/current.json?key=39b4ca0a7ef0490296435419230702&q=${location}&aqi=no`)
 			.then((res) => res.json())
 			.then((data) => setWeather(data));
 	}
